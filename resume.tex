@@ -1,45 +1,41 @@
-\documentclass[line, margin,]{res}
+\documentclass[margin,]{res}
 \usepackage{enumitem} % Allows for adding options to lists
          
 \begin{document}
-\name{\LARGE \bf Michael Sanderson}
-\address{315 S Locust St Apt 301 $\cdot$ Denton, TX 76201 $\cdot$ (940) 783-2400 $\cdot$ mtsanderson@gmail.com $\cdot$ github: mtsanderson}
+\moveleft.5\hoffset\centerline{\LARGE \bf Michael Sanderson}
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 0.25pt}\smallskip
+\moveleft.5\hoffset\centerline{Denton, TX $\cdot$ (940) 783-2400 $\cdot$ mtsanderson@gmail.com $\cdot$ github: mtsanderson}
  
 \begin{resume}
 \section{SKILLS}
 \begin{itemize}[leftmargin=10pt]
-    \item Linux Systems Administration (Debian, RHEL)
-    \item Monitoring (Zabbix, Nagios,)
-    \item Configuration Management (Saltstack, Ansible)
-    \item Continuous Integration (Jenkins)
-    \item Virtualization (VMware, KVM)
-    \item Version Control (Git)
-    \item Software (Tomcat, ELK, GitLab, Apache, Nginx, MySQL, Redis, Mulesoft)
-    \item Programming (Python, Go, Bash, PowerShell, SQL)
-    \item Protocols (HTTP, DNS, TCP, SMTP, SNMP, IMAP)
+    \item Languages: Python, Haskell, Go, JavaScript, Bash, SQL
+    \item Protocols: HTTP/HTTPS, DNS, TCP, UDP, LDAP
+    \item Platforms: Debian, Red Hat, Cloud Foundry, VMWare
+    \item Software: Nginx, HAProxy, MySQL, Postgres, Redis, Apache, GitLab
+    \item Concepts: RESTful APIs, Release Engineering, Version Control, CI/CD
 \end{itemize}
  
 \section{EXPERIENCE} 
-\textbf{Application Architect}
+\textbf{Systems Administrator Lead}
 \textit{University of North Texas System} \hfill 2015--present \\ [5pt]
-Act as both a lead engineer as well as an application architect for the university system. Design and deploy reliable, scalable and performant systems used by the entire university. Troubleshoot problems across full application stacks. Peel apart and re-deploy legacy systems to be more automated and manageable. Work to drive automation and continuous improvement effords across team lines. \\ \\
-\textbf{DevOps Engineer}
+Act as a lead systems administrator for the enterprise applications team. Design, build, and deploy reliable, scalable and performant systems and software used by the entire university. Lead efforts to spread and build a culture of engineering within the organization. Solve web, app, database, and networking problems. Meet with key stakeholders to understand business problems and present solutions. \\ \\
+\textbf{Systems Administrator}
 \textit{University of North Texas System} \hfill 2012--2015 \\ [5pt]
 Implemented system performance and availability monitoring using Zabbix, configuration management using Saltstack, continuous integration using Jenkins, and version control using Git. \\ \\
-\textbf{Systems Administrator}
+\textbf{IT Manager}
 \textit{University of North Texas} \hfill 2008--2012 \\ [5pt]
-Worked heavily with research faculty using Debian Linux, MySQL, and scientific computing software. Performed server performance and availability monitoring using Zenoss. Helped implement configuration management using Puppet. Helped design the College of Arts and Science's Windows desktop deployment procedure using Microsoft SCCM, User State Migration, and Dell CFI.
-
+Designed the Windows desktop deployment procedure using Microsoft SCCM. Worked with research faculty to manage their scientific computing software running on Debian Linux.
 \section{PROJECTS}
-\textbf{Centralized Logging} \hfill Active \\ [5pt]
-This infrastructure utilizes the open source ELK stack to provide a robust logging solution that indexes millions of log events each day. \\ \\
-\textbf{nesgo (http://github.com/mtsanderson/nesgo)} \hfill Active \\ [5pt]
-An attempt at emulating a MOS 6502 CPU/NES in the Go language. Successful completion of 6502 implementation, work in progress PPU/APU.
-
+\textbf{API Strategy} \hfill Active \\ [5pt]
+Designed and implemented a proof-of-concept API Gateway using Tyk. Wrote a custom authentication/authorization middleware in Python that allowed for multiple JWT claims to be mapped to interal Tyk access policies. Programmed against both the Tyk REST API as well as our internal identity management system. \\ \\
+\textbf{Student Experience Application} \hfill Active \\ [5pt]
+Helped architect and build a modern web application designed to seamlessly onboard new students. Programmed in JavaScript with the ReactJS library, implemented Google's Material Design using material-ui, and authored backend REST APIs in Python that exposed relevant student data. \\ \\
+\textbf{Centralized Source Control} \hfill Active \\ [5pt]
+Installed a GitLab instance that has become a key component in several teams' software development, deployment, and management workflows. Wrote integration code that synced GitLab groups with Active Directory groups.
 \section{EDUCATION} 
 \textbf{Bachelor of Science in Business Computer Information Systems} \\
 University of North Texas, Denton, TX, 2015 \\
-Coursework: Enterprise Architecture, Software Development, Networking, Information Security, Project Management
  
 \end{resume}
 \end{document}

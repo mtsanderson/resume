@@ -1,41 +1,52 @@
 \documentclass[margin,]{res}
-\usepackage{enumitem} % Allows for adding options to lists
+\usepackage{enumitem}
          
 \begin{document}
 \moveleft.5\hoffset\centerline{\LARGE \bf Michael Sanderson}
 \moveleft\hoffset\vbox{\hrule width\resumewidth height 0.25pt}\smallskip
-\moveleft.5\hoffset\centerline{Denton, TX $\cdot$ (940) 783-2400 $\cdot$ mtsanderson@gmail.com $\cdot$ github: mtsanderson}
+\moveleft.5\hoffset\centerline{(940) 783-2400 $\cdot$ michael@mtsanderson.com}
  
 \begin{resume}
 \section{SKILLS}
 \begin{itemize}[leftmargin=10pt]
-    \item Languages: Python, Haskell, Go, JavaScript, Bash, SQL
-    \item Protocols: HTTP/HTTPS, DNS, TCP, UDP, LDAP
-    \item Platforms: Debian, Red Hat, Cloud Foundry, VMWare
-    \item Software: Nginx, HAProxy, MySQL, Postgres, Redis, Apache, GitLab
-    \item Concepts: RESTful APIs, Release Engineering, Version Control, CI/CD
+    \item \textit{Languages}: Python, Go, Haskell, Shell, SQL
+    \item \textit{Protocols}: HTTP, DNS, TCP, UDP, LDAP
+    \item \textit{Platforms}: Debian, Red Hat, Cloud Foundry, Heroku, VMWare
+    \item \textit{Software}: FastAPI, Flask, Nginx, Gitlab, HAProxy, MySQL, Postgres, Oracle, Redis
+    \item \textit{Concepts}: HTTP APIs, Release Engineering, Version Control, CI/CD, Configuration Management
 \end{itemize}
- 
 \section{EXPERIENCE} 
-\textbf{Systems Administrator Lead}
-\textit{University of North Texas System} \hfill 2015--present \\ [5pt]
-Act as a lead systems administrator for the enterprise applications team. Design, build, and deploy reliable, scalable and performant systems and software used by the entire university. Lead efforts to spread and build a culture of engineering within the organization. Solve web, app, database, and networking problems. Meet with key stakeholders to understand business problems and present solutions. \\ \\
-\textbf{Systems Administrator}
-\textit{University of North Texas System} \hfill 2012--2015 \\ [5pt]
-Implemented system performance and availability monitoring using Zabbix, configuration management using Saltstack, continuous integration using Jenkins, and version control using Git. \\ \\
-\textbf{IT Manager}
-\textit{University of North Texas} \hfill 2008--2012 \\ [5pt]
-Designed the Windows desktop deployment procedure using Microsoft SCCM. Worked with research faculty to manage their scientific computing software running on Debian Linux.
-\section{PROJECTS}
-\textbf{API Strategy} \hfill Active \\ [5pt]
-Designed and implemented a proof-of-concept API Gateway using Tyk. Wrote a custom authentication/authorization middleware in Python that allowed for multiple JWT claims to be mapped to interal Tyk access policies. Programmed against both the Tyk REST API as well as our internal identity management system. \\ \\
-\textbf{Student Experience Application} \hfill Active \\ [5pt]
-Helped architect and build a modern web application designed to seamlessly onboard new students. Programmed in JavaScript with the ReactJS library, implemented Google's Material Design using material-ui, and authored backend REST APIs in Python that exposed relevant student data. \\ \\
-\textbf{Centralized Source Control} \hfill Active \\ [5pt]
-Installed a GitLab instance that has become a key component in several teams' software development, deployment, and management workflows. Wrote integration code that synced GitLab groups with Active Directory groups.
+    \textbf{Senior Software Engineer}
+    \textit{University of North Texas System} \hfill 2019--present \\ [5pt]
+    \begin{itemize}[leftmargin=10pt]
+        \item \textit{ETL Using Python}: extract data from databases and web-based APIs, apply in-memory transformations, and load into 3rd party systems as required. A key example is the data synchronization process between the ERP and the Learning Management System.
+        \item \textit{University Data API}: uses modern Python to build a REST API abstraction layer on top of an existing ERP system.
+        \item \textit{Platform as a Service}: deployed an on-premise installation of the open-source project, Cloud Foundry. Abstracts away the underlying compute, storage, and networking details and allows developers to focus on their code. Prior to this platform, a developer could potentially wait days for infrastructure resources to be provisoned. Now, they can deploy in seconds.
+        \item \textit{Mentorship}: provide individual training sessions to help skill-up team members in the use of Python, Linux, and Cloud Foundry.
+    \end{itemize}
+    \textbf{Systems Administrator Lead}
+    \textit{University of North Texas System} \hfill 2015--2019 \\ [5pt]
+    \begin{itemize}[leftmargin=10pt]
+        \item Led a team of five Systems Administrators who were responsible for some of the University's most important applications such as the Learning Management and Degree Audit Systems.
+        \item Spearheaded efforts to bring automation, infrastructure as code, source control, and application performance and availability monitoring to the team.
+        \item Introduced tools such as Jenkins, Saltstack, GitLab, and Zabbix which are still in use today.
+        \item Established a daily stand-up meeting to review work in progress on a Kanban board.
+    \end{itemize}
+    \textbf{Systems Administrator}
+    \textit{University of North Texas System} \hfill 2011--2015 \\ [5pt]
+    \begin{itemize}[leftmargin=10pt]
+        \item Participated in an on-call rotation, and acted as the primary administrator for enterprise data reporting and analytics applications such as Cognos and Informatica.
+        \item Utilized a Nagios monitoring server to provide performance and availability monitoring.
+        \item Wrote automation scripts in Python to streamline routine tasks such as software installs, server reboots, etc.
+    \end{itemize}
+    \textbf{IT Service Technician I-III}
+    \textit{University of North Texas} \hfill 2008-2011 \\ [5pt]
+    \begin{itemize}[leftmargin=10pt]
+        \item Acted as a member of helpdesk staff and provided 1st tier troubleshooting for common IT/Desktop Computer issues. Built strong troubleshooting skills, and learned to have patience while dealing with frustrated Faculty/Staff.
+        \item Trained under a full-time member of staff to develop a Windows Desktop Deployment process using Microsoft SCCM.
+    \end{itemize}
 \section{EDUCATION} 
-\textbf{Bachelor of Science in Business Computer Information Systems} \\
-University of North Texas, Denton, TX, 2015 \\
- 
+    \textbf{Bachelor of Science}
+    \textit{University of North Texas, Denton, TX} \hfill 2015 \\ [5pt]
 \end{resume}
 \end{document}
